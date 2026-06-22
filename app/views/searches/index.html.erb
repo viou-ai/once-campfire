@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div class="searches__recents align-center gap pad-block-half overflow-y overflow-hide-scrollbar">
+  <div class="searches__recents align-center gap pad-block-half overflow-x overflow-hide-scrollbar">
     <% @recent_searches.each do |search| %>
       <%= link_to searches_path(q: search.query), class: "align-center gap room btn txt-nowrap" do %>
         <span class="overflow-ellipsis">“<%= search.query %>”</span>
